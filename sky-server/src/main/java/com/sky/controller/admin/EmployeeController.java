@@ -134,8 +134,8 @@ public class EmployeeController {
                 .phone(employeeDTO.getPhone())
                 .idNumber(employeeDTO.getIdNumber())
                 .sex(employeeDTO.getSex())
-                .updateTime(LocalDateTime.now())
-                .updateUser(BaseContext.getCurrentId())
+                //.updateTime(LocalDateTime.now())
+                //.updateUser(BaseContext.getCurrentId())
                 .build();
         employeeService.update(employee);
         return Result.success();
